@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
+    <wb-module deploy-name="web_client_ejb">
+                
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="EJB_crud.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/EJB_crud/EJB_crud">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+                
+        <property name="context-root" value="web_client_ejb"/>
+                
+        <property name="java-output-path" value="/web_client_ejb/build/classes"/>
+            
+    </wb-module>
+    
+</project-modules>
